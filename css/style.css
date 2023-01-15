@@ -139,24 +139,26 @@ body header .loader span:nth-of-type(8) {
   animation-delay: 1.8s;
 }
 /*HEADER*/
- header h1 {
-  font-family: "Shrikhand", cursive;
-  font-size: 2.3rem;
+.logo {
   margin: 0;
-  padding: 1rem 0;
+  padding: 8px 0;
   text-align: center;
+}
+.logo img {
+  height: 50px;
+  width: 200px;
 }
 /*NAVBAR*/
 .nav-bar {
   text-align: center;
-  background-color: #F6F6F6;
+  background-color: #e3e3e3;
 }
  .nav-bar .search-bar {
   margin-top: 5px;
   font-size: 1.3rem;
   padding-top: 1rem;
   align-items: center;
-  background-color: #EAEAEA;
+  background-color: #e3e3e3;
 }
 .nav-bar .search-bar input {
   border: none;
@@ -164,10 +166,14 @@ body header .loader span:nth-of-type(8) {
   width: 200px;
   margin-left: 1rem;
   margin-bottom: 1rem;
-  background-color: #EAEAEA;
+  background-color: #e3e3e3;
+  color:#313131;
 }
  .nav-bar .search-bar input:focus {
-  outline-color: darkgray;
+  outline-color: #313131;
+}
+.nav-bar .search-bar input::placeholder{
+ color: #515151;
 }
   .nav-bar .search-bar .btn-explore .subtitle {
   margin-bottom: 3rem;
@@ -177,7 +183,7 @@ body header .loader span:nth-of-type(8) {
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  background-color: #EAEAEA;
+  background-color: #f7f7f7;
 }
  .nav-bar .search-bar .btn-explore label {
   display: flex;
@@ -188,7 +194,7 @@ body header .loader span:nth-of-type(8) {
   background: linear-gradient(#ff79da, #9356dc);
   padding: 0.8rem 1.5rem 0.8rem 1.5rem;
   margin-bottom: 3rem;
-  box-shadow: 0 3px 10px darkgray;
+  box-shadow: 0 3px 10px #f7f7f7;
   transition: 100ms;
 }
  .nav-bar .search-bar .btn-explore label:hover {
@@ -206,9 +212,11 @@ body header .loader span:nth-of-type(8) {
 }
  main .menu {
   margin-bottom: 2rem;
+  background-color: #ffffff;
 }
  main .menu h2 {
   display: flex;
+  position: relative;
   justify-content: center;
   margin: 1rem 0 0 1rem;
 }
@@ -218,10 +226,11 @@ body header .loader span:nth-of-type(8) {
   flex-wrap: wrap;
   gap: 3rem;
   justify-content: center;
+  position: relative;
 }
  main .menu ol li {
   width: 280px;
-  background-color: #F6F6F6;
+  background-color: #ffffff;
   border-radius: 1rem;
   padding: 1.5rem 0;
   box-shadow: 0 3px 5px darkgray;
@@ -257,7 +266,7 @@ main .menu ol li:hover {
 /*Restaurants*/
 .restaurants {
   padding-bottom: 4rem;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
