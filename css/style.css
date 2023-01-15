@@ -374,6 +374,15 @@ footer {
   font-family: "Raleway", sans-serif;
   gap: 16px;
 }
+.logofooter {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: italic;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 20px;
+}
 
 .card-footer {
   display: inline;

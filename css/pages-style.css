@@ -19,15 +19,21 @@
   left: -999px;
 }
 
-#article_1, #article_4, #article_7 {
+#article_1,
+#article_4,
+#article_7 {
   animation: apparition 600ms ease-in;
 }
 
-#article_2, #article_5, #article_8 {
+#article_2,
+#article_5,
+#article_8 {
   animation: apparition 1.2s ease-in;
 }
 
-#article_3, #article_6, #article_9 {
+#article_3,
+#article_6,
+#article_9 {
   animation: apparition 1.8s ease-in;
 }
 
@@ -66,6 +72,7 @@ body {
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
   max-width: 1500px;
+  overflow-x: hidden;
 }
 body fieldset {
   border: 0;
@@ -89,57 +96,58 @@ body header .logo i {
   cursor: pointer;
 }
 
- .logoimg img{
+.logoimg img {
   position: relative;
   height: 50px;
   width: 300px;
   justify-items: center;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   margin-left: 450px;
   margin-top: 1px;
-
 }
 body main {
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
 }
-body main, img {
+body main,
+img {
   height: 300px;
   object-fit: cover;
   object-position: 50% 70%;
   width: 100%;
 }
- .titre-menu {
+.titre-menu {
   position: relative;
-  top: -4rem;
+  top: -0.8rem;
   border-radius: 3rem 3rem 0 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-basis: 95%;
+  flex-basis: 100%;
   padding-left: 2rem;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
+  
 }
- .titre-menu h1 {
+.titre-menu h1 {
   font-family: "Shrikhand", cursive;
   font-size: 1.5rem;
 }
- .titre-menu i {
+.titre-menu i {
   display: flex;
   font-size: 2rem;
   padding-right: 3rem;
- }
- .titre-menu .layout-star {
+}
+.titre-menu .layout-star {
   display: flex;
   height: 50px;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
 }
- .titre-menu .layout-star .fa-solid.fa-heart {
+.titre-menu .layout-star .fa-solid.fa-heart {
   display: none;
 }
- .titre-menu .layout-star:hover {
+.titre-menu .layout-star:hover {
   cursor: pointer;
   opacity: 0;
   background: linear-gradient(#9356dc 20%, #ff79da 100%);
@@ -148,28 +156,32 @@ body main, img {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
- .titre-menu .layout-star:hover .fa-regular.fa-heart {
+.titre-menu .layout-star:hover .fa-regular.fa-heart {
   display: none;
 }
- .titre-menu .layout-star:hover .fa-solid.fa-heart {
+.titre-menu .layout-star:hover .fa-solid.fa-heart {
   display: inline;
 }
- .menus {
+.menus {
   border: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
+  position: relative;
+  top: -20px;
 }
- .menus .articles {
+.menus .articles {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 5px;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
 }
- .menus .articles .entrees,  .menus .articles .plats,  .menus .articles .desserts {
+.menus .articles .entrees,
+.menus .articles .plats,
+.menus .articles .desserts {
   display: flex;
   justify-content: center;
   padding-bottom: 3rem;
@@ -177,16 +189,25 @@ body main, img {
   width: 32%;
   align-content: flex-start;
 }
- .menus .articles .entrees h4,  .menus .articles .entrees p,  .menus .articles .plats h4, .menus .articles .plats p,.menus .articles .desserts h4, .menus .articles .desserts p {
+.menus .articles .entrees h4,
+.menus .articles .entrees p,
+.menus .articles .plats h4,
+.menus .articles .plats p,
+.menus .articles .desserts h4,
+.menus .articles .desserts p {
   margin: 0;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.menus .articles .entrees p,  .menus .articles .plats p,  .menus .articles .desserts p {
+.menus .articles .entrees p,
+.menus .articles .plats p,
+.menus .articles .desserts p {
   font-size: 0.9rem;
 }
- .menus .articles .entrees h3, .menus .articles .plats h3,  .menus .articles .desserts h3 {
+.menus .articles .entrees h3,
+.menus .articles .plats h3,
+.menus .articles .desserts h3 {
   display: flex;
   justify-content: center;
   flex-basis: 100%;
@@ -197,7 +218,9 @@ body main, img {
   padding-bottom: 1rem;
   position: relative;
 }
- .menus .articles .entrees h3::after,  .menus .articles .plats h3::after,  .menus .articles .desserts h3::after {
+.menus .articles .entrees h3::after,
+.menus .articles .plats h3::after,
+.menus .articles .desserts h3::after {
   position: absolute;
   top: 25px;
   content: "";
@@ -205,7 +228,9 @@ body main, img {
   width: 50px;
   background-color: #99e2d0;
 }
- .menus .articles .entrees .article-menu,  .menus .articles .plats .article-menu,  .menus .articles .desserts .article-menu {
+.menus .articles .entrees .article-menu,
+.menus .articles .plats .article-menu,
+.menus .articles .desserts .article-menu {
   display: flex;
   background-color: white;
   width: 100%;
@@ -217,15 +242,21 @@ body main, img {
   margin-right: 1rem;
   box-shadow: 0 2px 5px darkgray;
 }
-body main .menus .articles .entrees .article-menu:hover .select-choix,  .menus .articles .plats .article-menu:hover .select-choix,  .menus .articles .desserts .article-menu:hover .select-choix {
+body main .menus .articles .entrees .article-menu:hover .select-choix,
+.menus .articles .plats .article-menu:hover .select-choix,
+.menus .articles .desserts .article-menu:hover .select-choix {
   margin: 0;
   transition: all 0.5s;
   cursor: pointer;
 }
- .menus .articles .entrees .article-menu:hover .select-choix i,  .menus .articles .plats .article-menu:hover .select-choix i,  .menus .articles .desserts .article-menu:hover .select-choix i {
+.menus .articles .entrees .article-menu:hover .select-choix i,
+.menus .articles .plats .article-menu:hover .select-choix i,
+.menus .articles .desserts .article-menu:hover .select-choix i {
   animation: spin 1s;
 }
- .menus .articles .entrees .article-menu .description,  .menus .articles .plats .article-menu .description,  .menus .articles .desserts .article-menu .description {
+.menus .articles .entrees .article-menu .description,
+.menus .articles .plats .article-menu .description,
+.menus .articles .desserts .article-menu .description {
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -235,10 +266,14 @@ body main .menus .articles .entrees .article-menu:hover .select-choix,  .menus .
   width: calc(100% - 54px);
   padding: 0.5rem 0 0.5rem 1rem;
 }
- .menus .articles .entrees .article-menu .description:hover, .menus .articles .plats .article-menu .description:hover, .menus .articles .desserts .article-menu .description:hover {
+.menus .articles .entrees .article-menu .description:hover,
+.menus .articles .plats .article-menu .description:hover,
+.menus .articles .desserts .article-menu .description:hover {
   cursor: pointer;
 }
- .menus .articles .entrees .article-menu .prix,  .menus .articles .plats .article-menu .prix,  .menus .articles .desserts .article-menu .prix {
+.menus .articles .entrees .article-menu .prix,
+.menus .articles .plats .article-menu .prix,
+.menus .articles .desserts .article-menu .prix {
   display: flex;
   justify-content: center;
   width: 30px;
@@ -247,13 +282,17 @@ body main .menus .articles .entrees .article-menu:hover .select-choix,  .menus .
   padding: 0 0.5rem 0.5rem 0;
   border-radius: 0 1rem 1rem 0;
 }
-.menus .articles .entrees .article-menu .prix:hover,  .menus .articles .plats .article-menu .prix:hover, .menus .articles .desserts .article-menu .prix:hover {
+.menus .articles .entrees .article-menu .prix:hover,
+.menus .articles .plats .article-menu .prix:hover,
+.menus .articles .desserts .article-menu .prix:hover {
   cursor: pointer;
 }
- .menus .articles .entrees .article-menu .select-choix, .menus .articles .plats .article-menu .select-choix, .menus .articles .desserts .article-menu .select-choix {
+.menus .articles .entrees .article-menu .select-choix,
+.menus .articles .plats .article-menu .select-choix,
+.menus .articles .desserts .article-menu .select-choix {
   display: flex;
   justify-content: center;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   color: white;
   font-weight: bold;
   font-size: 1.3rem;
@@ -262,12 +301,12 @@ body main .menus .articles .entrees .article-menu:hover .select-choix,  .menus .
   width: 50px;
   margin-right: -4rem;
 }
-  .btn-explore { 
-    display: flex;
+.btn-explore {
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
 }
 .btn-explore label {
   display: flex;
@@ -287,7 +326,7 @@ body main .menus .articles .entrees .article-menu:hover .select-choix,  .menus .
   box-shadow: 0 3px 10px #ff79da;
   transition: 0.5s;
 }
- .btn-explore p {
+.btn-explore p {
   font-size: 1.8rem;
   margin: 0;
   margin-top: 1.5rem;
@@ -303,6 +342,17 @@ footer {
   color: #fff;
   justify-content: center;
   justify-items: space-around;
+  position: absolute;
+  margin-top: -25px;
+}
+.logofooter {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: italic;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 20px;
 }
 
 .container-footer {
@@ -326,7 +376,7 @@ footer {
   margin-bottom: 16px;
   text-decoration: none;
   color: inherit;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 .card-footer a:hover {
   text-decoration: underline !important;
@@ -336,28 +386,38 @@ footer {
 *       MEDIA QUERIES
 */
 @media (max-width: 1122px) {
-  body main .menus .articles .entrees, body main .menus .articles .plats, body main .menus .articles .desserts {
+  body main .menus .articles .entrees,
+  body main .menus .articles .plats,
+  body main .menus .articles .desserts {
     display: flex;
     width: 48%;
   }
-  body main .menus .articles .entrees .article-menu, body main .menus .articles .plats .article-menu, body main .menus .articles .desserts .article-menu {
+  body main .menus .articles .entrees .article-menu,
+  body main .menus .articles .plats .article-menu,
+  body main .menus .articles .desserts .article-menu {
     max-width: 440px;
   }
 }
 @media (max-width: 667px) and (hover: none) {
-  body main .menus .articles .entrees, body main .menus .articles .plats, body main .menus .articles .desserts {
+  body main .menus .articles .entrees,
+  body main .menus .articles .plats,
+  body main .menus .articles .desserts {
     width: 100%;
     white-space: nowrap;
     text-overflow: ellipsis;
   }
-  body main .menus .articles .entrees h3, body main .menus .articles .plats h3, body main .menus .articles .desserts h3 {
+  body main .menus .articles .entrees h3,
+  body main .menus .articles .plats h3,
+  body main .menus .articles .desserts h3 {
     display: flex;
     justify-content: flex-start;
     margin-left: 10px;
   }
-  body main .menus .articles .entrees .article-menu, body main .menus .articles .plats .article-menu, body main .menus .articles .desserts .article-menu {
+  body main .menus .articles .entrees .article-menu,
+  body main .menus .articles .plats .article-menu,
+  body main .menus .articles .desserts .article-menu {
     display: flex;
-    background-color: #EAEAEA;
+    background-color: #eaeaea;
     width: 100%;
     height: 60px;
     border-radius: 1rem;
@@ -367,15 +427,21 @@ footer {
     margin-right: 1rem;
     box-shadow: 0 2px 5px darkgray;
   }
-  body main .menus .articles .entrees .article-menu:hover .select-choix, body main .menus .articles .plats .article-menu:hover .select-choix, body main .menus .articles .desserts .article-menu:hover .select-choix {
+  body main .menus .articles .entrees .article-menu:hover .select-choix,
+  body main .menus .articles .plats .article-menu:hover .select-choix,
+  body main .menus .articles .desserts .article-menu:hover .select-choix {
     margin: 0;
     transition: all 0.5s;
     cursor: pointer;
   }
-  body main .menus .articles .entrees .article-menu:hover .select-choix i, body main .menus .articles .plats .article-menu:hover .select-choix i, body main .menus .articles .desserts .article-menu:hover .select-choix i {
+  body main .menus .articles .entrees .article-menu:hover .select-choix i,
+  body main .menus .articles .plats .article-menu:hover .select-choix i,
+  body main .menus .articles .desserts .article-menu:hover .select-choix i {
     animation: spin 1s;
   }
-  body main .menus .articles .entrees .article-menu .description, body main .menus .articles .plats .article-menu .description, body main .menus .articles .desserts .article-menu .description {
+  body main .menus .articles .entrees .article-menu .description,
+  body main .menus .articles .plats .article-menu .description,
+  body main .menus .articles .desserts .article-menu .description {
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -385,10 +451,14 @@ footer {
     width: calc(100% - 54px);
     padding: 0.5rem 0 0.5rem 1rem;
   }
-  body main .menus .articles .entrees .article-menu .description:hover, body main .menus .articles .plats .article-menu .description:hover, body main .menus .articles .desserts .article-menu .description:hover {
+  body main .menus .articles .entrees .article-menu .description:hover,
+  body main .menus .articles .plats .article-menu .description:hover,
+  body main .menus .articles .desserts .article-menu .description:hover {
     cursor: pointer;
   }
-  body main .menus .articles .entrees .article-menu .prix, body main .menus .articles .plats .article-menu .prix, body main .menus .articles .desserts .article-menu .prix {
+  body main .menus .articles .entrees .article-menu .prix,
+  body main .menus .articles .plats .article-menu .prix,
+  body main .menus .articles .desserts .article-menu .prix {
     display: flex;
     justify-content: center;
     width: 30px;
@@ -397,13 +467,17 @@ footer {
     padding: 0 0.5rem 0.5rem 0;
     border-radius: 0 1rem 1rem 0;
   }
-  body main .menus .articles .entrees .article-menu .prix:hover, body main .menus .articles .plats .article-menu .prix:hover, body main .menus .articles .desserts .article-menu .prix:hover {
+  body main .menus .articles .entrees .article-menu .prix:hover,
+  body main .menus .articles .plats .article-menu .prix:hover,
+  body main .menus .articles .desserts .article-menu .prix:hover {
     cursor: pointer;
   }
-  body main .menus .articles .entrees .article-menu .select-choix, body main .menus .articles .plats .article-menu .select-choix, body main .menus .articles .desserts .article-menu .select-choix {
+  body main .menus .articles .entrees .article-menu .select-choix,
+  body main .menus .articles .plats .article-menu .select-choix,
+  body main .menus .articles .desserts .article-menu .select-choix {
     display: flex;
     justify-content: center;
-    background-color: #99E2D0;
+    background-color: #99e2d0;
     color: white;
     font-weight: bold;
     font-size: 1.3rem;
@@ -412,11 +486,15 @@ footer {
     width: 50px;
     margin-right: -4rem;
   }
-  body main .menus .articles .entrees .article-menu, body main .menus .articles .plats .article-menu, body main .menus .articles .desserts .article-menu {
+  body main .menus .articles .entrees .article-menu,
+  body main .menus .articles .plats .article-menu,
+  body main .menus .articles .desserts .article-menu {
     max-width: 282px !important;
     margin: 5px !important;
   }
-  body main .menus .articles .entrees .article-menu .description p, body main .menus .articles .plats .article-menu .description p, body main .menus .articles .desserts .article-menu .description p {
+  body main .menus .articles .entrees .article-menu .description p,
+  body main .menus .articles .plats .article-menu .description p,
+  body main .menus .articles .desserts .article-menu .description p {
     font-size: 13px;
   }
   body main footer {
@@ -427,7 +505,7 @@ footer {
     justify-content: center;
     justify-items: space-around;
   }
-  
+
   body main .container-footer {
     display: flex;
     max-width: 1330px;
@@ -435,12 +513,12 @@ footer {
     font-family: "Raleway", sans-serif;
     gap: 16px;
   }
-  
+
   body main .card-footer {
     display: flex;
     flex-direction: column;
     min-width: 30%;
-    justify-content: center,space-between;
+    justify-content: center, space-between;
     margin-left: auto;
     margin-right: auto;
   }
@@ -460,7 +538,7 @@ footer {
   }
   body main footer {
     padding-left: 2rem !important;
-  } 
+  }
   body main footer {
     background-color: #2c3e50;
     width: 100%;
@@ -469,7 +547,7 @@ footer {
     justify-content: center;
     justify-items: space-around;
   }
-  
+
   body main .container-footer {
     display: flex;
     max-width: 1330px;
@@ -477,12 +555,12 @@ footer {
     font-family: "Raleway", sans-serif;
     gap: 16px;
   }
-  
+
   body main .footer .card-footer {
     display: flex;
     flex-direction: column;
     min-width: 30%;
-    justify-content: center,space-between;
+    justify-content: center, space-between;
     margin-left: auto;
     margin-right: auto;
   }
@@ -505,14 +583,18 @@ footer {
   }
 }
 @media (max-width: 667px) {
-  body main .menus .articles .entrees, body main .menus .articles .plats, body main .menus .articles .desserts {
+  body main .menus .articles .entrees,
+  body main .menus .articles .plats,
+  body main .menus .articles .desserts {
     width: 100%;
     white-space: nowrap;
     text-overflow: ellipsis;
   }
-  body main .menus .articles .entrees .article-menu, body main .menus .articles .plats .article-menu, body main .menus .articles .desserts .article-menu {
+  body main .menus .articles .entrees .article-menu,
+  body main .menus .articles .plats .article-menu,
+  body main .menus .articles .desserts .article-menu {
     display: flex;
-    background-color: #EAEAEA;
+    background-color: #eaeaea;
     width: 100%;
     height: 60px;
     border-radius: 1rem;
@@ -522,15 +604,21 @@ footer {
     margin-right: 1rem;
     box-shadow: 0 2px 5px darkgray;
   }
-  body main .menus .articles .entrees .article-menu:hover .select-choix, body main .menus .articles .plats .article-menu:hover .select-choix, body main .menus .articles .desserts .article-menu:hover .select-choix {
+  body main .menus .articles .entrees .article-menu:hover .select-choix,
+  body main .menus .articles .plats .article-menu:hover .select-choix,
+  body main .menus .articles .desserts .article-menu:hover .select-choix {
     margin: 0;
     transition: all 0.5s;
     cursor: pointer;
   }
-  body main .menus .articles .entrees .article-menu:hover .select-choix i, body main .menus .articles .plats .article-menu:hover .select-choix i, body main .menus .articles .desserts .article-menu:hover .select-choix i {
+  body main .menus .articles .entrees .article-menu:hover .select-choix i,
+  body main .menus .articles .plats .article-menu:hover .select-choix i,
+  body main .menus .articles .desserts .article-menu:hover .select-choix i {
     animation: spin 1s;
   }
-  body main .menus .articles .entrees .article-menu .description, body main .menus .articles .plats .article-menu .description, body main .menus .articles .desserts .article-menu .description {
+  body main .menus .articles .entrees .article-menu .description,
+  body main .menus .articles .plats .article-menu .description,
+  body main .menus .articles .desserts .article-menu .description {
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -540,10 +628,14 @@ footer {
     width: calc(100% - 54px);
     padding: 0.5rem 0 0.5rem 1rem;
   }
-  body main .menus .articles .entrees .article-menu .description:hover, body main .menus .articles .plats .article-menu .description:hover, body main .menus .articles .desserts .article-menu .description:hover {
+  body main .menus .articles .entrees .article-menu .description:hover,
+  body main .menus .articles .plats .article-menu .description:hover,
+  body main .menus .articles .desserts .article-menu .description:hover {
     cursor: pointer;
   }
-  body main .menus .articles .entrees .article-menu .prix, body main .menus .articles .plats .article-menu .prix, body main .menus .articles .desserts .article-menu .prix {
+  body main .menus .articles .entrees .article-menu .prix,
+  body main .menus .articles .plats .article-menu .prix,
+  body main .menus .articles .desserts .article-menu .prix {
     display: flex;
     justify-content: center;
     width: 30px;
@@ -552,13 +644,17 @@ footer {
     padding: 0 0.5rem 0.5rem 0;
     border-radius: 0 1rem 1rem 0;
   }
-  body main .menus .articles .entrees .article-menu .prix:hover, body main .menus .articles .plats .article-menu .prix:hover, body main .menus .articles .desserts .article-menu .prix:hover {
+  body main .menus .articles .entrees .article-menu .prix:hover,
+  body main .menus .articles .plats .article-menu .prix:hover,
+  body main .menus .articles .desserts .article-menu .prix:hover {
     cursor: pointer;
   }
-  body main .menus .articles .entrees .article-menu .select-choix, body main .menus .articles .plats .article-menu .select-choix, body main .menus .articles .desserts .article-menu .select-choix {
+  body main .menus .articles .entrees .article-menu .select-choix,
+  body main .menus .articles .plats .article-menu .select-choix,
+  body main .menus .articles .desserts .article-menu .select-choix {
     display: flex;
     justify-content: center;
-    background-color: #99E2D0;
+    background-color: #99e2d0;
     color: white;
     font-weight: bold;
     font-size: 1.3rem;
@@ -567,10 +663,11 @@ footer {
     width: 50px;
     margin-right: -4rem;
   }
-  body main .menus .articles .entrees h3, body main .menus .articles .plats h3, body main .menus .articles .desserts h3 {
+  body main .menus .articles .entrees h3,
+  body main .menus .articles .plats h3,
+  body main .menus .articles .desserts h3 {
     display: flex;
     justify-content: flex-start !important;
     margin-left: 10px;
   }
-
 }
