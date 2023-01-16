@@ -363,8 +363,8 @@ footer {
   width: 100%;
   padding: 32px 16px;
   color: #fff;
-  justify-content: center;
-  justify-items: space-around;
+  justify-content: space-around;
+  justify-items: center;
 }
 
 .container-footer {
@@ -522,8 +522,8 @@ header .loader span:nth-of-type(8) {
     width: 100%;
     padding: 32px 16px;
     color: #fff;
-    justify-content: center;
-    justify-items: space-around;
+    justify-content: space-around;
+    justify-items: center;
   }
   
   .container-footer {
@@ -533,12 +533,21 @@ header .loader span:nth-of-type(8) {
     font-family: "Raleway", sans-serif;
     gap: 16px;
   }
+  .logofooter {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-style: italic;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+  }
   
   .card-footer {
     display: flex;
     flex-direction: column;
     min-width: 30%;
-    justify-content: center,space-between;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
   }
