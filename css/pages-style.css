@@ -150,9 +150,9 @@ img {
 }
 .titre-menu .layout-star:hover {
   cursor: pointer;
-  opacity: 0;
+  opacity: 1;
   background: linear-gradient(#9356dc 20%, #ff79da 100%);
-  animation: effet-opacity 1.5s ease;
+  animation: effet-opacity 0.5s ease;
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

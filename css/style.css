@@ -316,7 +316,7 @@ main .menu ol li:hover {
   cursor: pointer;
   opacity: 0;
   background: linear-gradient(#9356dc 20%, #ff79da 100%);
-  animation: effet-opacity 1.5s ease;
+  animation: effet-opacity 2.5s ease;
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
